@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post an Ad</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+
+ <!-- navbar  -->
+    <nav id="navbar-m">
+
+        <div class="navbar bg-[#4c68ff]  text-neutral-content flex justify-between  px-[1.4rem] ">
+            <div class="head-logo">
+                <p class="nav-heading text-[white] text-[1.8rem]">Buy / Sells Corner</p>
+
+            </div>
+
+            <div class="nav-icons flex gap-4 justify-center items-center">
+
+                <div class="Logout-div">
+
+                    <button id="logout">Logout</button>
+                </div>
+
+
+                <div class="nav-img-div">
+
+                    <div class="profile-container">
+                        <img  alt="photo"  src="" class="profile-photo" id="profileImage">
+                        <div class="dropdown-menu" id="dropdownMenu">
+                            <ul>
+                                <li><a href="register.html">register</a></li>
+                                <li><a href="login.html">login</a></li>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="postAd.html">post ad</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+
+
+
+    <!-- post form  -->
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class=" shadow-xl rounded-lg p-6 max-w-lg w-full">
+            <h1 class="text-2xl text-black font-bold mb-6 text-center">Post Your Ad</h1>
+
+            <form id="product-form">
+            
+                <div class="form-control mb-6">
+                    <label class="label">
+                        <span class="label-text"></span>
+                    </label>
+                    <div class="custom-file-input">
+                        <input type="file" id="pdt-picture" multiple />
+                        <span>Upload product photo</span>
+                    </div>
+                </div>
+
+                <!-- Title Input -->
+                <div class="form-control mb-4">
+                    <label class="label" for="title">
+                        <span class="label-text">Title</span>
+                    </label>
+                    <input type="text" id="pdt-title" placeholder="Enter your ad title" class="input input-bordered w-full" />
+                </div>
+
+                <!-- Price Input -->
+                <div class="form-control mb-4">
+                    <label class="label" for="price">
+                        <span class="label-text">Price</span>
+                    </label>
+                    <input type="number" id="pdt-price" placeholder="Enter the price" class="input input-bordered w-full" />
+                </div>
+
+                <!-- Description Input -->
+                <div class="form-control mb-4">
+                    <label class="label" for="description">
+                        <span class="label-text">Description</span>
+                    </label>
+                    <textarea id="pdt-description" placeholder="Describe your item" class="textarea textarea-bordered w-full"></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-control">
+                    <button type="submit" class="postBtn btn bcg-[#4c68fe] ">Post Ad</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script type="module" src="postAd.js"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+     <!-- js style link  -->
+     <script src="style.js"></script>
+</body>
+</html>
