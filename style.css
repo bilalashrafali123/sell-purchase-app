@@ -163,6 +163,7 @@ figure{
             position: relative;
             overflow: hidden;
             text-align: center;
+            background-color: #3a50c2;
         }
         .custom-file-input input[type="file"] {
             position: absolute;
