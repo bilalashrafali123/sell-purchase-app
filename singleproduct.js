@@ -35,7 +35,7 @@ function checkUserStatus() {
   
       else {
         console.log('no user');
-       userAvatar.innerHTML = `<button class = "h-login">  <a href="login.html">login</a> </button>`
+       userAvatar.innerHTML = `<button class = "h-login btn btn-outline btn-secondary">  <a href="login.html">login</a> </button>`
   
   
       }

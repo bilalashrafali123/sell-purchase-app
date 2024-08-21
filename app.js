@@ -29,7 +29,7 @@ function checkUserStatus() {
       });
     } else {
       console.log('no user');
-      userAvatar.innerHTML = `<button class="h-login"><a href="login.html">login</a></button>`;
+      userAvatar.innerHTML = `<button class="h-login btn btn-outline btn-secondary"><a href="login.html">login</a></button>`;
     }
   });
 }
@@ -63,7 +63,7 @@ function renderProducts(products = productsArr) {
   produtsDiv.innerHTML = "";
   products.map((items) => {
     produtsDiv.innerHTML += `
-            <div class="card bg-base-100 w-96 p-[1rem] shadow-xl">
+            <div class="card bg-base-100 w-96 p-[1rem] shadow-xl flex justify-center flex-wrap">
                 <figure>
                     <img class="proImg" src="${items.productPic}">
                 </figure>
